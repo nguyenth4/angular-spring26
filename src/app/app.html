@@ -1,0 +1,142 @@
+<div class="app-layout">
+  <!-- Navbar -->
+  <header class="navbar glass">
+    <div class="nav-container">
+      <div class="logo">
+        <div class="logo-icon"></div>
+        <span class="logo-text">Aura<span class="highlight">Space</span></span>
+      </div>
+      
+      <nav class="nav-links">
+        <ul>
+          <li><a href="#" class="active">Discover</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Community</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <a href="#" class="btn-text">Sign In</a>
+        <button class="btn-gradient">Get Started</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Banner -->
+  <main class="main-content">
+    <section class="hero">
+      <div class="hero-badge">✨ V2.0 is now live</div>
+      <h1 class="hero-title">Elevate Your Digital <br/> <span class="text-gradient">Experience</span></h1>
+      <p class="hero-subtitle">
+        Unleash the power of our next-generation platform. Build faster, scale smarter, and design with unparalleled beauty.
+      </p>
+      
+      <div class="hero-cta">
+        <button class="btn-gradient btn-lg">Start Free Trial</button>
+        <button class="btn-outline btn-lg">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-top;"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          Watch Demo
+        </button>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value">10k+</span>
+          <span class="stat-label">Active Users</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">99.9%</span>
+          <span class="stat-label">Uptime</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-value">4.9/5</span>
+          <span class="stat-label">Rating</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Router Outlet Wrapper (Glass Card) -->
+    <section class="content-view glass">
+      <div class="view-header">
+        <h2>Dashboard Preview</h2>
+        <div class="window-controls">
+          <span class="dot close"></span>
+          <span class="dot minimize"></span>
+          <span class="dot expand"></span>
+        </div>
+      </div>
+      <div class="view-body">
+        <router-outlet></router-outlet>
+        
+        <!-- Placeholder content so it looks good even when outlet is empty -->
+        <div class="placeholder-content">
+          <div class="card-grid">
+            <div class="feature-card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #3b82f6, #2dd4bf)"></div>
+              <h3>Real-time Analytics</h3>
+              <p>Monitor your project's performance with beautiful interactive charts.</p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #f59e0b, #ef4444)"></div>
+              <h3>Smart AI Tools</h3>
+              <p>Leverage our integrated AI to automate repetitive workflows.</p>
+            </div>
+            <div class="feature-card">
+              <div class="card-icon" style="background: linear-gradient(135deg, #8b5cf6, #ec4899)"></div>
+              <h3>Seamless Integration</h3>
+              <p>Connect with your favorite tools in just one click.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="brand-col">
+        <div class="logo">
+          <div class="logo-icon small"></div>
+          <span class="logo-text">Aura<span class="highlight">Space</span></span>
+        </div>
+        <p class="footer-desc">Crafting the future of web experiences with cutting-edge technology and stunning design.</p>
+      </div>
+      <div class="link-col">
+        <h4>Product</h4>
+        <ul>
+          <li><a href="#">Updates</a></li>
+          <li><a href="#">Security</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+      <div class="link-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#">Documentation</a></li>
+          <li><a href="#">Help Center</a></li>
+          <li><a href="#">API Reference</a></li>
+        </ul>
+      </div>
+      <div class="link-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom glass">
+      <div class="nav-container" style="display: flex; justify-content: space-between; width: 100%;">
+        <p>&copy; 2026 AuraSpace. All rights reserved.</p>
+        <div class="socials">
+          <a href="#">Twitter</a>
+          <a href="#">GitHub</a>
+          <a href="#">Discord</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
